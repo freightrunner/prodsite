@@ -1,3 +1,44 @@
+.nav,.navbar-main {
+    margin-left: 150px;
+    margin-right: 0;
+}
+
+.navbar-default {
+    background-image: url("../img/p1-b.png");
+    background-position: top center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    padding: 0 0 20px;
+    font-family: 'Lato', sans-serif;
+}
+
 body {
     font-family: 'Lato', sans-serif;
+    min-height: 2000px;
+}
+
+header {
+    margin: 0 0 180px 0;
+}
+
+.nav img {
+    margin-top: -50px;
+}
+
+.navbar-right {
+    position: relative;
+    margin-top: -500px
+    margin-right: -100px;
+}
+
+#sections a{
+    margin: 50px 0 0 10px;
+    font-size: 200%;
+    color: #FFFFFF !important;
+}
+
+#section1 {
+    overflow: auto;
+    height: 100%;
 }

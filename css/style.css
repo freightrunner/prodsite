@@ -1,3 +1,16 @@
+.navbar {
+    display: block !important;
+    overflow: auto !important;
+}
+
+.anchor:before {
+    display: block;
+    content: " ";
+    margin-top: -151px;
+    height: 151px;
+    visibility: hidden;
+}
+
 .nav,.navbar-main {
     margin-left: 150px;
     margin-right: 0;
@@ -29,7 +42,7 @@ header {
 .navbar-right {
     position: relative;
     margin-top: -500px
-    margin-right: -100px;
+    margin-right: -300px !important;
 }
 
 #sections a{
@@ -38,7 +51,4 @@ header {
     color: #FFFFFF !important;
 }
 
-#section1 {
-    overflow: auto;
-    height: 100%;
-}
+

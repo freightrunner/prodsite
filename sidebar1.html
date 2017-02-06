@@ -16,7 +16,7 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
         <!-- My style sheet -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css">
         
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 
@@ -25,64 +25,106 @@
     </head>
     
     <body>
-      <!-- TOP NAVIGATION BAR -->
-      <div class="container-fluid">
-      <header class="">
-        <nav class="navbar navbar-default navbar-static-top">
-          <div class="container" id="main-nav">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><div class="back"><img src="img/logo.png"></div></a>
-            </div>
-            
-            <!-- Nav Links -->
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-main" id="sections">
-                <li><a href="#intro">Overview</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Segments<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li id="drop"><a href="#ptv">Informed with Rob Lowe</a></li>
-                    <li id="drop"><a href="#educomm">Educational Commercial</a></li>
-                    <li id="drop"><a href="#corp">Corporate Profile</a></li>
-                  </ul>
-                </li>
-                <li><a href="#next">Next Steps</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-               <li></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <div class="head-default">
+        <a class="navbar-brand" href="#"><div class="back"><img src="img/logo.png"></div></a>
       </div>
+      <div id="col-xs-3">
+        <div id="sidebar-wrapper">
+          <nav class="navbar navbar-default sidebar nav-bar-static-top" role="navigation">
+        <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>      
+        </div>
+        <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#intro">Intro<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Segments <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+              <ul class="dropdown-menu forAnimate" role="menu">
+                <li><a href="#ptv">Public Television</a></li>
+                <li><a href="#educomm">Educational Commercial</a></li>
+                <li><a href="#corp">Corporate Profile</a></li>
+              </ul>
+            </li>          
+            <li ><a href="#nextsteps">Next Steps<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a></li>        
+          </ul>
+        </div>
+      </div>
+    </nav>
+        </div>
+      </div>
+      
       <!-- BEGINNING OF GUIDE -->
       <div class="container" style="">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h2 class="anchor" id="intro">About <stong><i>Informed</i></strong></h2>
-            <p><i>Informed Hosted by Rob Lowe</i> is an award-winning program that highlights new stories and innovative concepts through groundbreaking short-form and long-form documentary presentations.  For nearly a decade this evolutionary series has been providing companies with the voice needed to educate the public and make a change in the world.</p>
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
-            More Information
-            </button>
+          <div class="col-xs-10">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2 class="anchor" id="intro">About <stong><i>Informed</i></strong></h2>
+                <p><i>Informed Hosted by Rob Lowe</i> is an award-winning program that highlights new stories and innovative concepts through groundbreaking short-form and long-form documentary presentations.  For nearly a decade this evolutionary series has been providing companies with the voice needed to educate the public and make a change in the world.</p>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+                More Information
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <h2 class="" id="ptv" style="">Public Television Documentary</h2>
+                <p>Short form documentary (3-5 minutes) hosted by Rob Lowe and distributed to Public Television Stations nationwide.</p>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#ptvModal">
+                More information
+                </button>
+                <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#ptvVidModal">
+                Example Video
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <h2 class="anchor" id="educomm" style="margin-top: 10px;">Educational Commercial</h2>
+                <p>A one minute educational commercial that airs across the major networks (CNN, MSNBC, Discovery, Fox, etc.) at prime time (6pm - 10pm).</p>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commNatModal">
+                National Distribution
+                </button>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commRegModal">
+                Regional Distribution
+                </button>
+                <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#commVidModal">
+                Example Video
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <h2 class="anchor" id="corp" style="margin-top: 10px;">Corporate Profile</h2>
+                <p>A 5-7 minute corporate profile that guests typically stream on their website</p>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#corpModal">
+                More information
+                </button>
+                <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#cvModal">
+                Example Video
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <h2 class="anchor" id="nextsteps" style="margin-top: 10px;">Next Steps</h2>
+                <p><strong><i>Informed</i> selects one company as a featured guest and we'd like to congratulate you for being a potential cadidate.  Should we select you to be our Featured Guest we will need to get a singed copy of our Production Agreement by the deadline your producer will inform you of.  Further information about our production cycle can be found below.</strong></p>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#prodCycleModal">
+                Production Cycle
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h2 class="" id="ptv" style="margin-top: 10px;">Public Television Documentary</h2>
-            <p>Short form documentary (3-5 minutes) hosted by Rob Lowe and distributed to Public Television Stations nationwide.</p>
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#ptvModal">
-            More information
-            </button>
-            <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#ptvVidModal">
-            Example Video
-            </button>
+          <div class="col-xs-10 col-xs-offset-2">
+            
           </div>
           <div class="col-md-2">
             <div class="anchor"></div>
@@ -90,38 +132,17 @@
         </div>
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h2 class="anchor" id="educomm" style="margin-top: 10px;">Educational Commercial</h2>
-            <p>A one minute educational commercial that airs across the major networks (CNN, MSNBC, Discovery, Fox, etc.) at prime time (6pm - 10pm).</p>
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commNatModal">
-            National Distribution
-            </button>
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commRegModal">
-            Regional Distribution
-            </button>
-            <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#commVidModal">
-            Example Video
-            </button>
+            
           </div>
         </div>
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h2 class="anchor" id="corp" style="margin-top: 10px;">Corporate Profile</h2>
-            <p>A 5-7 minute corporate profile that guests typically stream on their website</p>
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#corpModal">
-            More information
-            </button>
-            <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#cvModal">
-            Example Video
-            </button>
+            
           </div>
         </div>
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h2 class="anchor" id="segments" style="margin-top: 10px;">Next Steps</h2>
-            <p><strong><i>Informed</i> selects one company as a featured guest and we'd like to congratulate you for being a potential cadidate.  Should we select you to be our Featured Guest we will need to get a singed copy of our Production Agreement by the deadline your producer will inform you of.  Further information about our production cycle can be found below.</strong></p>
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#prodCycleModal">
-            Production Cycle
-            </button>
+            
           </div>
         </div>
       </div> 

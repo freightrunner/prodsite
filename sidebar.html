@@ -67,18 +67,27 @@
                 </button>
               </div>
             </div>
-            <div class="row" style="border-bottom: dashed;">
+            <div class="row" style="">
               <div class="col-xs-11">
                 <h2 class="" id="ptv" style="margin-top: 40px">3 Pronged Approach</h2>
-                <p><strong><i>Informed</i></strong> uses a 3 pronged approach to educating our viewers.</p>
-                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#ptvModal">
-                More information
-                </button>
+                <p><strong><i>Informed</i></strong> uses a 3 pronged approach to educating our viewers.  Use the tabs below to learn more about our 3 segments and the demographics they target.</p>
+                <ul class="nav nav-pills" role="tablist">
+                
+                  <li role="presentation" class="active"><a href="#ptvSeg" aria-controls="ptvSeg" role="tab" data-toggle="pill"><strong>Public Television</strong></a></li>
+                  <li role="presentation"><a href="#eduComm" aria-controls="messages" role="tab" data-toggle="pill"><strong>Educational Commercial</strong></a></li>
+                  <li role="presentation"><a href="#corpProfile" aria-controls="corpProfile" role="tab" data-toggle="pill"><strong>Corporate Profile</strong></a></li>
+                </ul>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xs-10 col-xs-offset-2">
-                <h2 class="" id="ptv" style="margin-top: 40px">Public Television Documentary</h2>
+            
+            <div class="tab-content">
+         
+              <div role="tabpanel" class="tab-pane fade in active" id="ptvSeg" style="">
+                <div class="col-xs-2">
+                  <img id="arrow" src="img/arrow.png"></img>
+                </div>
+                <div class="col-xs-10">
+                  <h2 class="" id="ptv" style="margin-top: 10px;"><i><strong>Informed</strong> Hosted By Rob Lowe</i></h2>
                 <p>Short form documentary (3-5 minutes) hosted by Rob Lowe and distributed to Public Television Stations nationwide.</p>
                 <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#ptvModal">
                 More information
@@ -86,35 +95,60 @@
                 <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#ptvVidModal">
                 Example Video
                 </button>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#satMap">
+                Distribution Map
+                </button>
+                </div>
+                
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="eduComm">
+                <div class="col-xs-2">
+                  <img id="arrow" src="img/arrow.png"></img>
+                </div>
+                <div class="col-xs-10">
+                  <h2 class="anchor" id="educomm" style="margin-top: 10px;">Educational Commercial</h2>
+                  <p>A one minute educational commercial that airs across the major networks (CNN, MSNBC, Discovery, Fox, etc.) at prime time (6pm - 10pm).</p>
+                  <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commNatModal">
+                  National Distribution
+                  </button>
+                  <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commRegModal">
+                  Regional Distribution
+                  </button>
+                  <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#commVidModal">
+                  Example Video
+                  </button>
+                  <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commDemModal">
+                  Network Demographics
+                  </button>
+                </div>
+                
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="corpProfile">
+                <div class="col-xs-2">
+                  <img id="arrow" src="img/arrow.png"></img>
+                </div>
+                <div class="col-xs-10">
+                  <h2 class="anchor" id="corp" style="margin-top: 10px;">Corporate Profile</h2>
+                  <p>A 5-7 minute corporate profile that guests typically stream on their website, and that we also email to up to 1 million of our subscribers.</p>
+                  <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#corpModal">
+                  More information
+                  </button>
+                  <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#cvModal">
+                  Example Video
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xs-10 col-xs-offset-2">
-                <h2 class="anchor" id="educomm" style="margin-top: 40px;">Educational Commercial</h2>
-                <p>A one minute educational commercial that airs across the major networks (CNN, MSNBC, Discovery, Fox, etc.) at prime time (6pm - 10pm).</p>
-                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commNatModal">
-                National Distribution
-                </button>
-                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commRegModal">
-                Regional Distribution
-                </button>
-                <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#commVidModal">
-                Example Video
-                </button>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-10 col-xs-offset-2">
-                <h2 class="anchor" id="corp" style="margin-top: 40px;">Corporate Profile</h2>
-                <p>A 5-7 minute corporate profile that guests typically stream on their website, and that we also email to up to 1 million of our subscribers.</p>
-                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#corpModal">
-                More information
-                </button>
-                <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#cvModal">
-                Example Video
-                </button>
-              </div>
-            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <div class="row">
               <div class="col-xs-11">
                 <h2 class="anchor" id="nextsteps" style="margin-top: 40px;">Next Steps</h2>
@@ -127,16 +161,18 @@
           </div>
         </div>
       </div> 
+      
+      
       <!-- Intro Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" style="">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">About <stong><i>Informed</i></h4>
             </div>
             <div class="modal-body">
-              <p>More descriptive text</p>
+              
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -157,6 +193,23 @@
               for unlimited broadcast at each stations’ discretion (estimated viewership and reach for one year is 60 million households).
               The short-form documentary is hosted by Rob Lowe.
               </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="satMap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Public Television Distribution Map</h4>
+            </div>
+            <div class="modal-body">
+              <img style="" src="img/satmap.PNG"></img>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -198,6 +251,55 @@
           </div>
         </div>
       </div>
+      
+      <div class="modal fade" id="commDemModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Network Television Demographics</h4>
+            </div>
+            <div class="modal-body">
+              <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" class="active"><a href="#demInfo" aria-controls="demInfo" role="tab" data-toggle="pill">Home</a></li>
+                <li role="presentation"><a href="#foxNews" aria-controls="foxNews" role="tab" data-toggle="pill">Fox News</a></li>
+                <li role="presentation"><a href="#foxBusiness" aria-controls="foxBusiness" role="tab" data-toggle="pill">Fox Business</a></li>
+                <li role="presentation"><a href="#cnbc" aria-controls="cnbc" role="tab" data-toggle="pill">CNBC</a></li>
+                <li role="presentation"><a href="#cnn" aria-controls="cnn" role="tab" data-toggle="pill">CNN</a></li>
+                <li role="presentation"><a href="#cnnHeadline" aria-controls="cnnHeadline" role="tab" data-toggle="pill">CNN Headline News</a></li>
+                <li role="presentation"><a href="#msnbc" aria-controls="msnbc" role="tab" data-toggle="pill">MSNBC</a></li>
+                <li role="presentation"><a href="#tlc" aria-controls="tlc" role="tab" data-toggle="pill">TLC</a></li>
+                <li role="presentation"><a href="#discovery" aria-controls="discovery" role="tab" data-toggle="pill">Discovery</a></li>
+                <li role="presentation"><a href="#oxygen" aria-controls="oxygen" role="tab" data-toggle="pill">Oxygen</a></li>
+              </ul>
+              
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="demInfo">
+                  <h2>This is a test</h2>
+                </div>
+                
+                <div role="tabpanel" class="tab-pane" id="foxNews">
+                  
+                </div>
+                
+                <div role="tabpanel" class="tab-pane" id="foxBusiness">...</div>
+                <div role="tabpanel" class="tab-pane" id="cnbc">...</div>
+                <div role="tabpanel" class="tab-pane" id="cnn">...</div>
+                <div role="tabpanel" class="tab-pane" id="cnnHeadline">...</div>
+                <div role="tabpanel" class="tab-pane" id="msnbc">...</div>
+                <div role="tabpanel" class="tab-pane" id="tlc">...</div>
+                <div role="tabpanel" class="tab-pane" id="discovery">...</div>
+                <div role="tabpanel" class="tab-pane" id="oxygen">...</div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
       <!-- Corporate Profile Modal -->
       <div class="modal fade" id="corpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -289,7 +391,7 @@
         </div>
       </div>
        
-        
+      
         
         
     </body>

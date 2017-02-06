@@ -143,5 +143,17 @@ body,html{
 
 .row {
   padding-bottom: 20px;
-  border-bottom: solid;
+
+}
+
+p {
+    font-size: 120%;
+}
+
+h2 {
+    border-top: solid #777;
+}
+
+#arrow {
+  margin-top: 25%;
 }

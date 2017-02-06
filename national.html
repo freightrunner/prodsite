@@ -29,7 +29,7 @@
       <div class="container-fluid">
       <header class="">
         <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
+          <div class="container" id="main-nav">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -47,7 +47,7 @@
                 <li><a href="#segments">Segments</a></li>
                 <li><a href="#next">Next Steps</a></li>
               </ul>
-              <ul class="nav navbar-nav navbar-right icon">
+              <ul class="nav navbar-nav navbar-right">
                <li></li>
               </ul>
             </div>
@@ -55,15 +55,59 @@
         </nav>
       </header>
       </div>
-       <!-- BEGINNING OF GUIDE -->
-       <div class="container" style="margin-top: 140px;">
-         <h2 class="anchor" id="intro">About <stong><i>Informed</i></strong></h2>
-         <p><i>Informed Hosted by Rob Lowe</i> is an award-winning program that highlights new stories and innovative concepts through groundbreaking short-form and long-form documentary presentations.  For nearly a decade this evolutionary series has been providing companies with the voice needed to educate the public and make a change in the world.</p>
-         <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
-          More Information
-        </button>
+      <!-- BEGINNING OF GUIDE -->
+      <div class="container" style="margin-top: 140px;">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="anchor" id="intro">About <stong><i>Informed</i></strong></h2>
+            <p><i>Informed Hosted by Rob Lowe</i> is an award-winning program that highlights new stories and innovative concepts through groundbreaking short-form and long-form documentary presentations.  For nearly a decade this evolutionary series has been providing companies with the voice needed to educate the public and make a change in the world.</p>
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+            More Information
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="anchor" id="segments" style="margin-top: 10px;">Public Television Documentary</h2>
+            <p>Short form documentary (3-5 minutes) hosted by Rob Lowe and distributed to Public Television Stations nationwide.</p>
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#ptvModal">
+            More information
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-8">
+            <h2 class="anchor" id="segments" style="margin-top: 10px;">Educational Commercial</h2>
+            <p>A one minute educational commercial that airs across the major networks (CNN, MSNBC, Discovery, Fox, etc.) at prime time (6pm - 10pm).</p>
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commNatModal">
+            National Distribution
+            </button>
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commRegModal">
+            Regional Distribution
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-8">
+            <h2 class="anchor" id="segments" style="margin-top: 10px;">Corporate Profile</h2>
+            <p>A 5-7 minute corporate profile that guests typically stream on their website</p>
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#corpModal">
+            More information
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-8">
+            <h2 class="anchor" id="segments" style="margin-top: 10px;">Next Steps</h2>
+            <p><strong><i>Informed</i> selects one company as a featured guest and we'd like to congratulate you for being a potential cadidate.  Should we select you to be our Featured Guest we will need to get a singed copy of our Production Agreement by the deadline your producer will inform you of.  Further information about our production cycle can be found below.</strong></p>
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#prodCycleModal">
+            Production Cycle
+            </button>
+          </div>
+        </div>
+      </div> 
           
-        <!-- Modal -->
+        <!-- Intro Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -80,17 +124,7 @@
             </div>
           </div>
         </div>
-       </div>
-       
-       <!-- Second Segment OF GUIDE -->
-       <div class="container" >
-         <h2 class="anchor" id="segments" style="margin-top: 10px;">Public Television Documentary</h2>
-         <p>Short form documentary (3-5 minutes) hosted by Rob Lowe and distributed to Public Television Stations nationwide.</p>
-         <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#ptvModal">
-          More information
-        </button>
-          
-        <!-- Modal -->
+        <!-- PTV Modal -->
         <div class="modal fade" id="ptvModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -110,7 +144,80 @@
             </div>
           </div>
         </div>
-       </div>
+        <!-- National Commercial Modal -->
+        <div class="modal fade" id="commNatModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">National One Minute Education Commercial</h4>
+              </div>
+              <div class="modal-body">
+                <p>A one minute educational commercial that airs one time nationwide across the major networks (CNN, MSNBC, Discovery, Fox Business, etc.) at prime time (6pm-10pm) and then an additional 400 times at prime time in the top 100 markets in the US – Reaches 80 million viewers</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Regional Commercial Modal -->
+        <div class="modal fade" id="commRegModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Regional One Minute Education Commercial</h4>
+              </div>
+              <div class="modal-body">
+                <p>Informed will provide the production of one (1) high end one-minute educational commercial segment used for network distribution, broadcast fifty (50) times primetime via MSNBC, CNBC, CNN or an equivalent network, and in the city of your choice.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Corporate Profile Modal -->
+        <div class="modal fade" id="corpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Corporate Profile</i></h4>
+              </div>
+              <div class="modal-body">
+                <p>Informed will provide the production of one (1) broadcast quality, 5-6 minute educational documentary profile in HD with expansive and detailed information documenting the issues and educational message that concern your target audience.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Production Cycle Modal -->
+        <div class="modal fade" id="prodCycleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">About <stong><i>Informed</i></h4>
+              </div>
+              <div class="modal-body">
+                <p>Day 1: Contract signed and organization is scheduled for participation in the project.<br><br>
+                Days 2 - 14: Project Fee is due on receipt of invoice; Questionnaire and Collaterals Sent (Due by Day 14).<br><br>
+                Days 15 - 45: Project assigned to a field producer, producer reviews literature, acclimates to storyline.<br><br>
+                Days 46 - 75: Scripts written and approved. Shoot location determined and shoot day set.<br><br>
+                Days 76 - 90+: Shoot day occurs; studio editing of 3 components according to approved script; segments        ..........................are approved and media schedule is set for airing.<br>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
         
         
         

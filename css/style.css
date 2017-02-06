@@ -70,3 +70,11 @@ header {
 p {
     font-size: 120%;
 }
+
+button {
+    margin-bottom: 40px !important;
+}
+
+h2 {
+    font-weight: bolder;
+}

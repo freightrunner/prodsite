@@ -41,27 +41,31 @@
             <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li class=""><a href="#intro">Intro<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-info-sign"></span></a></li>
+                <li><a href="#educate">How We Educate<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-globe"></span></a></li>
+              <!-- DROPDOWN MENU
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">How We Educate<span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-globe"></span></a>
                   <ul class="dropdown-menu forAnimate" role="menu">
                     <li><a href="#ptv">Public Television</a></li>
+                    <li><a href="#eduComm" aria-controls="eduComm" role="tab" data-toggle="tab"><strong>Public Television</strong></a></li>
                     <li><a href="#educomm">Educational Commercial</a></li>
                     <li><a href="#corp">Corporate Profile</a></li>
                   </ul>
-                </li>          
-                <li ><a href="#nextsteps">Next Steps<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a></li>        
+                </li>   
+                -->       
+                <li><a href="#nextsteps">Next Steps<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a></li>        
               </ul>
             </div>
           </nav>
         </div>
-      <!-- BEGINNING OF GUIDE -->
+<!-- BEGINNING OF GUIDE -->
       <div class="container" style="">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-2">
             <div class="row">
               <div class="col-xs-11">
                 <h2 class="anchor" id="intro">About <strong><i>Informed</i></strong></h2>
-                <p><i>Informed Hosted by Rob Lowe</i> is an award-winning program that highlights new stories and innovative concepts through groundbreaking short-form and long-form documentary presentations.  For nearly a decade this evolutionary series has been providing companies with the voice needed to educate the public and make a change in the world.</p>
+                <p><strong><i>Informed</strong> Hosted by Rob Lowe</i> is an award-winning program that highlights new stories and innovative concepts through groundbreaking short-form and long-form documentary presentations.  For nearly a decade this evolutionary series has been providing companies with the voice needed to educate the public and make a change in the world.</p>
                 <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
                 More Information
                 </button>
@@ -69,25 +73,25 @@
             </div>
             <div class="row" style="">
               <div class="col-xs-11">
-                <h2 class="" id="ptv" style="margin-top: 40px">3 Pronged Approach</h2>
+                <h2 class="" id="educate" style="margin-top: 40px">Three Pronged Appraoch to Education</h2>
                 <p><strong><i>Informed</i></strong> uses a 3 pronged approach to educating our viewers.  Use the tabs below to learn more about our 3 segments and the demographics they target.</p>
-                <ul class="nav nav-pills" role="tablist">
+                <ul class="nav nav-tabs" role="tablist">
                 
-                  <li role="presentation" class="active"><a href="#ptvSeg" aria-controls="ptvSeg" role="tab" data-toggle="pill"><strong>Public Television</strong></a></li>
-                  <li role="presentation"><a href="#eduComm" aria-controls="messages" role="tab" data-toggle="pill"><strong>Educational Commercial</strong></a></li>
-                  <li role="presentation"><a href="#corpProfile" aria-controls="corpProfile" role="tab" data-toggle="pill"><strong>Corporate Profile</strong></a></li>
+                  <li role="presentation" class="active"><a href="#ptvSeg" aria-controls="ptvSeg" role="tab" data-toggle="tab"><strong>Public Television</strong></a></li>
+                  <li role="presentation"><a href="#eduComm" aria-controls="eduComm" role="tab" data-toggle="tab"><strong>Educational Commercial</strong></a></li>
+                  <li role="presentation"><a href="#corpProfile" aria-controls="corpProfile" role="tab" data-toggle="tab"><strong>Corporate Profile</strong></a></li>
                 </ul>
               </div>
             </div>
-            
+<!-- SEGMENT TABS -->
             <div class="tab-content">
-         
+  <!-- PUBLIC TELEVISION SEGMENT -->
               <div role="tabpanel" class="tab-pane fade in active" id="ptvSeg" style="">
                 <div class="col-xs-2">
-                  <img id="arrow" src="img/arrow.png"></img>
+                  <img class="img-responsive" id="arrow" src="img/arrow.png"></img>
                 </div>
                 <div class="col-xs-10">
-                  <h2 class="" id="ptv" style="margin-top: 10px;"><i><strong>Informed</strong> Hosted By Rob Lowe</i></h2>
+                  <h3 class="" id="ptv" style="margin-top: 10px;"><i><strong>Informed</strong> Hosted By Rob Lowe</i></h3>
                 <p>Short form documentary (3-5 minutes) hosted by Rob Lowe and distributed to Public Television Stations nationwide.</p>
                 <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#ptvModal">
                 More information
@@ -99,14 +103,14 @@
                 Distribution Map
                 </button>
                 </div>
-                
               </div>
+  <!-- EDUCATIONAL COMMERCIAL -->
               <div role="tabpanel" class="tab-pane fade" id="eduComm">
                 <div class="col-xs-2">
-                  <img id="arrow" src="img/arrow.png"></img>
+                  <img class="img-responsive" id="arrow" src="img/arrow.png"></img>
                 </div>
                 <div class="col-xs-10">
-                  <h2 class="anchor" id="educomm" style="margin-top: 10px;">Educational Commercial</h2>
+                  <h3 class="anchor" id="educomm" style="margin-top: 10px;">Educational Commercial</h3>
                   <p>A one minute educational commercial that airs across the major networks (CNN, MSNBC, Discovery, Fox, etc.) at prime time (6pm - 10pm).</p>
                   <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#commNatModal">
                   National Distribution
@@ -121,14 +125,14 @@
                   Network Demographics
                   </button>
                 </div>
-                
               </div>
+  <!-- CORPORATE PROFILE -->
               <div role="tabpanel" class="tab-pane fade" id="corpProfile">
                 <div class="col-xs-2">
-                  <img id="arrow" src="img/arrow.png"></img>
+                  <img class="img-responsive" id="arrow" src="img/arrow.png"></img>
                 </div>
                 <div class="col-xs-10">
-                  <h2 class="anchor" id="corp" style="margin-top: 10px;">Corporate Profile</h2>
+                  <h3 class="anchor" id="corp" style="margin-top: 10px;">Corporate Profile</h3>
                   <p>A 5-7 minute corporate profile that guests typically stream on their website, and that we also email to up to 1 million of our subscribers.</p>
                   <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#corpModal">
                   More information
@@ -139,16 +143,7 @@
                 </div>
               </div>
             </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+<!-- NEXT STEPS -->
             <div class="row">
               <div class="col-xs-11">
                 <h2 class="anchor" id="nextsteps" style="margin-top: 40px;">Next Steps</h2>
@@ -156,14 +151,17 @@
                 <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#prodCycleModal">
                 Production Cycle
                 </button>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#selectionModal">
+                Selection Process
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div> 
       
-      
-      <!-- Intro Modal -->
+<!-- MODALS MODALS MODALS -->
+  <!-- INTRO MODAL -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document" style="">
           <div class="modal-content">
@@ -180,19 +178,32 @@
           </div>
         </div>
       </div>
-      <!-- PTV Modal -->
+<!-- PTV MORE INFO MODAL -->
       <div class="modal fade" id="ptvModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Public Television Documentary</h4>
+              <h4 class="modal-title" id="myModalLabel"><p>Public Television Documentary</p></h4>
             </div>
             <div class="modal-body">
-              <p>Short-form documentary (3-5 minutes) will be distributed to Public Television stations in all 50 states, airing for one year,
-              for unlimited broadcast at each stations’ discretion (estimated viewership and reach for one year is 60 million households).
-              The short-form documentary is hosted by Rob Lowe.
-              </p>
+              <div class="center-block">
+                <img style="background-color: #265a88; margin-bottom: 5px;" class="center-block" src="img/logo.png"></img>
+              </div>
+              <div class="panel panel-primary" style="clear: both">
+                <div class="panel-heading">
+                  <p><strong><i>Informed</i></strong> with Rob Lowe</p>
+                </div>
+                <div class="panel-body">
+                  <p><strong><i>Informed</i></strong> is an award winning short-form documentary series, hosted by Rob Lowe, which educates the public on a broad variety of subjects.</p>
+                  <ul>
+                    <li><p>Each segment lasts on average 3-5 minutes and are used in lieu of commercials to bridge the gap between shows on Public Television</p></li>
+                    <li><p>Each segment features 1 company as its featured guest and will air on Public Television nationwide for a full year</p></li>
+                    <li><p>During that year each segment will be seen by approximately 60 million households</p></li>
+                    <li><p>The purpose of this documentary is strictly educational, not commercial.</p></li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -200,7 +211,7 @@
           </div>
         </div>
       </div>
-      
+<!-- SATELLITE MAP MODAL -->
       <div class="modal fade" id="satMap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -217,16 +228,25 @@
           </div>
         </div>
       </div>
-      <!-- National Commercial Modal -->
+<!-- NATIONAL COMMERCIAL MODAL -->
       <div class="modal fade" id="commNatModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">National One Minute Education Commercial</h4>
             </div>
             <div class="modal-body">
-              <p>A one minute educational commercial that airs one time nationwide across the major networks (CNN, MSNBC, Discovery, Fox Business, etc.) at prime time (6pm-10pm) and then an additional 400 times at prime time in the top 100 markets in the US – Reaches 80 million viewers</p>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <p>About the educational commercial</p>
+                </div>
+                <div class="panel-body">
+                  <p>A one minute educational commercial that airs one time nationwide across the major networks (CNN, MSNBC, Discovery, Fox Business, etc.) at prime time (6pm-10pm) and then an additional 400 times at prime time in the top 100 markets in the US – Reaches 80 million viewers</p>
+                  <h3 class="center-block">Map of National Media Markets</h3>
+                  <img class="img-responsive" src="img/topMarkets.PNG"></img>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -234,7 +254,7 @@
           </div>
         </div>
       </div>
-      <!-- Regional Commercial Modal -->
+<!-- REGIONAL COMMERCIAL MODAL -->
       <div class="modal fade" id="commRegModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -252,6 +272,7 @@
         </div>
       </div>
       
+<!-- NETWORK DEMOGRAPHICS -->
       <div class="modal fade" id="commDemModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -273,23 +294,153 @@
                 <li role="presentation"><a href="#oxygen" aria-controls="oxygen" role="tab" data-toggle="pill">Oxygen</a></li>
               </ul>
               
+
               <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="demInfo">
-                  <h2>This is a test</h2>
+                  <h3>Select a network above to view network-specific demographics</h3>
                 </div>
                 
                 <div role="tabpanel" class="tab-pane" id="foxNews">
-                  
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      Fox News Viewer Information
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><strong>Median Age :</strong> 65 years</li>
+                        <li><strong>Median Household Income :</strong> $61,000</li>
+                        <li><strong>Attended College :</strong> 38%</li>
+                        <li><strong>Men :</strong> 51%</li>
+                        <li><strong>Women :</strong> 49%</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 
-                <div role="tabpanel" class="tab-pane" id="foxBusiness">...</div>
-                <div role="tabpanel" class="tab-pane" id="cnbc">...</div>
-                <div role="tabpanel" class="tab-pane" id="cnn">...</div>
-                <div role="tabpanel" class="tab-pane" id="cnnHeadline">...</div>
-                <div role="tabpanel" class="tab-pane" id="msnbc">...</div>
-                <div role="tabpanel" class="tab-pane" id="tlc">...</div>
-                <div role="tabpanel" class="tab-pane" id="discovery">...</div>
-                <div role="tabpanel" class="tab-pane" id="oxygen">...</div>
+                <div role="tabpanel" class="tab-pane" id="foxBusiness">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      Fox Business Network Viewer Information
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><strong>Median Age :</strong> 69 years</li>
+                        <li><strong>Median Household Income :</strong> $71,000</li>
+                        <li><strong>Graduated College :</strong> 56%</li>
+                        <li><strong>Men :</strong> 72%</li>
+                        <li><strong>Women :</strong> 28%</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="cnbc">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      CNBC Viewer Information
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><strong>Median Age :</strong> 58 years</li>
+                        <li><strong>Median Household Income :</strong> $75,000</li>
+                        <li><strong>Attended College :</strong> 75%</li>
+                        <li><strong>Men :</strong> 60%</li>
+                        <li><strong>Women :</strong> 40%</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="cnn"><div class="panel panel-primary">
+                    <div class="panel-heading">
+                      CNN Viewer Information
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><strong>Median Age :</strong> 61 years</li>
+                        <li><strong>Median Household Income :</strong> $51,000</li>
+                        <li><strong>Attended College :</strong> 63%</li>
+                        <li><strong>Men :</strong> 52%</li>
+                        <li><strong>Women :</strong> 48%</li>
+                      </ul>
+                    </div>
+                  </div></div>
+                <div role="tabpanel" class="tab-pane" id="cnnHeadline"><div class="panel panel-primary">
+                    <div class="panel-heading">
+                      CNN Headline News Viewer Information
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><strong>Median Age :</strong> 56 years</li>
+                        <li><strong>Median Household Income :</strong> $43,000</li>
+                        <li><strong>Attended College :</strong> 63%</li>
+                        <li><strong>Men :</strong> 39%</li>
+                        <li><strong>Women :</strong> 61%</li>
+                      </ul>
+                    </div>
+                  </div></div>
+                <div role="tabpanel" class="tab-pane" id="msnbc">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      MSNBC Viewer Information
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><strong>Median Age :</strong> 47 years</li>
+                        <li><strong>Median Household Income :</strong> $66,000</li>
+                        <li><strong>Attended College :</strong> 31%</li>
+                        <li><strong>Men :</strong> 54%</li>
+                        <li><strong>Women :</strong> 46%</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tlc">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      TLC Viewer Information
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><strong>Median Age :</strong> 44 years</li>
+                        <li><strong>Median Household Income :</strong> $59,000</li>
+                        <li><strong>Attended College :</strong> 46%</li>
+                        <li><strong>Men :</strong> 36%</li>
+                        <li><strong>Women :</strong> 64%</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="discovery">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      Discovery Channel Viewer Information
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><strong>Median Age :</strong> 47 years</li>
+                        <li><strong>Median Household Income :</strong> $58,000</li>
+                        <li><strong>Attended College :</strong> 43%</li>
+                        <li><strong>Men :</strong> 62%</li>
+                        <li><strong>Women :</strong> 38%</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="oxygen">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      Oxygen Channel Viewer Information
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><strong>Median Age :</strong> 44 years</li>
+                        <li><strong>Median Household Income :</strong> $42,000</li>
+                        <li><strong>Attended College :</strong> 41%</li>
+                        <li><strong>Men :</strong> 28%</li>
+                        <li><strong>Women :</strong> 72%</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="modal-footer">

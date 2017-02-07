@@ -157,3 +157,8 @@ h2 {
 #arrow {
   margin-top: 25%;
 }
+
+strong > i {
+  margin-right: 4px;
+}
+

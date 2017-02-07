@@ -159,6 +159,25 @@ h2 {
 }
 
 strong > i {
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
+.modal-body {
+  padding-bottom: 0px;
+}
+
+.modal-body > .panel {
+  margin-bottom: 5px;
+}
+
+#nomodal .panel-footer > button {
+  float: right;
+}
+
+.modal-content .panel {
+  margin-bottom: 0px;
+}
+
+.modal-body:not(#pad) {
+  padding: 0px;
+}

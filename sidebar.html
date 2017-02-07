@@ -40,7 +40,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class=""><a href="#intro">Intro<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-info-sign"></span></a></li>
+                <li class=""><a href="#intro">About <strong><i>Informed</i></strong><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-info-sign"></span></a></li>
                 <li><a href="#educate">How We Educate<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-education"></span></a></li>
                 <li><a href="#nextsteps">Next Steps<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-hand-right"></span></a></li>
               <!-- DROPDOWN MENU
@@ -81,6 +81,7 @@
                   <li role="presentation" class="active"><a href="#ptvSeg" aria-controls="ptvSeg" role="tab" data-toggle="tab"><strong>Public Television</strong></a></li>
                   <li role="presentation"><a href="#eduComm" aria-controls="eduComm" role="tab" data-toggle="tab"><strong>Educational Commercial</strong></a></li>
                   <li role="presentation"><a href="#corpProfile" aria-controls="corpProfile" role="tab" data-toggle="tab"><strong>Corporate Profile</strong></a></li>
+                  <li role="presentation"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab"><strong>Overview</strong></a></li>
                 </ul>
               </div>
             </div>
@@ -149,6 +150,18 @@
                   </button>
                 </div>
               </div>
+  <!-- OVERVIEW -->
+              <div role="tabpanel" class="tab-pane fade" id="overview">
+                <div class="col-xs-2">
+                  <img class="img-responsive" id="arrow" src="img/arrow.png"></img>
+                </div>
+                <div class="col-xs-10">
+                  <h3 class="anchor" id="corp" style="margin-top: 10px;">Overview Files</h3>
+                  <p>Click below to view our National And Regional Distribution Overview Files:</p>
+                  <a href="docs/national.pdf" target="_blank"><button type="button" class="btn btn-primary btn-md">View National Overview</button></a>
+                  <a href="docs/regional.pdf" target="_blank"><button type="button" class="btn btn-primary btn-md">View Regional Overview</button></a>
+                </div>
+              </div>
             </div>
 <!-- NEXT STEPS -->
             <div class="row">
@@ -170,43 +183,37 @@
 <!-- MODALS MODALS MODALS -->
   <!-- INTRO MODAL -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document" style="">
+        <div class="modal-dialog" role="document" id="nomodal">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">About <strong><i>Informed</i></strong> Hosted by Rob Lowe</h4>
-            </div>
+            
             <div class="modal-body">
               <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">About <strong><i>Informed</i></strong> Hosted by Rob Lowe</h4>
+                </div>
                 <div class="panel-body">
                   <p><strong><i>Informed</i></strong> boasts award winning producers, writers, videographers, and editors with over one hundred years of cumulative production experience.  By capturing the true essence of each short form documentary, the program is able to effectively educate and communicate the most crucial stories to a wide audience- both through Public and Network Television distribution.  <strong><i>Informed</i></strong> is hosted by industry veteran Rob Lowe.  <br><br>
                   Utilizing an efficient and wholly effective production cycle that clearly delineates the role of every team member, <strong><i>Informed</i></strong> is able to deliver cutting edge HD programming with clarity and vision. The series maintains a consistent and unilateral quality assurance production process to guarantee that each documentary meets and exceeds network expectations.  This foundation further ensures the highest quality content for broadcast.  <br><br>
                   With strategic partnerships across various media distribution outlets, <strong><i>Informed</i></strong> continues to produce incredible stories featuring a wide variety of topics and personalities that serves to educate and entertain the viewing audience on the latest topics and trends impacting America.</p>
                 </div>
-                
+                <div class="panel-footer clearfix">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
 <!-- PTV MORE INFO MODAL -->
       <div class="modal fade" id="ptvModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" id="nomodal">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel"><p>Public Television Documentary</p></h4>
-            </div>
             <div class="modal-body">
-              <div class="center-block">
-                <img style="background-color: #265a88; margin-bottom: 5px;" class="center-block" src="img/logo.png"></img>
-              </div>
               <div class="panel panel-primary" style="clear: both">
                 <div class="panel-heading">
-                  <p><strong><i>Informed</i></strong> with Rob Lowe</p>
+                  
+                  <img style="" class="center-block" src="img/logo.png"></img>
                 </div>
                 <div class="panel-body">
                   <p><strong><i>Informed</i></strong> is an award winning short-form documentary series, hosted by Rob Lowe, which educates the public on a broad variety of subjects.</p>
@@ -221,76 +228,74 @@
                     </ul>
                   </ul>
                 </div>
+                <div class="panel-footer clearfix">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
 <!-- SATELLITE MAP MODAL -->
       <div class="modal fade" id="satMap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-lg" role="document" id="nomodal">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Public Television Distribution Map</h4>
-            </div>
             <div class="modal-body">
-              <img style="" src="img/satmap.PNG"></img>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Public Television Distribution Map</h4>
+                </div>
+                <div class="panel-body">
+                  <img class="img-responsive" src="img/satmap.PNG"></img>
+                </div>
+                <div class="panel-footer clearfix">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+            
           </div>
         </div>
       </div>
 <!-- NATIONAL COMMERCIAL MODAL -->
       <div class="modal fade" id="commNatModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-lg" role="document" id="nomodal">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">National One Minute Education Commercial</h4>
-            </div>
             <div class="modal-body">
               <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <p>About the educational commercial</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">About the educational commercial</h4>
                 </div>
                 <div class="panel-body">
                   <p>A one minute educational commercial that airs one time nationwide across the major networks (CNN, MSNBC, Discovery, Fox Business, etc.) at prime time (6pm-10pm) and then an additional 400 times at prime time in the top 100 markets in the US – Reaches 80 million viewers</p>
                   <h3 class="center-block">Map of National Media Markets</h3>
                   <img class="img-responsive" src="img/topMarkets.PNG"></img>
                 </div>
+                <div class="panel-footer clearfix">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
 <!-- REGIONAL COMMERCIAL MODAL -->
       <div class="modal fade" id="commRegModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" id="nomodal">
           <div class="modal-content">
-            <!-- WIHTOUT MODAL HEADER
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Regional One Minute Education Commercial</h4>
-            </div>
-            -->
             <div class="modal-body">
               <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <p>Local Educational Commercial Distribution</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Local Educational Commercial Distribution</h4>
                 </div>
                 <div class="panel-body">
                   <p>Informed will provide the production of one (1) high end one-minute educational commercial segment used for network distribution, broadcast fifty (50) times primetime (6pm - 10pm) via MSNBC, CNBC, CNN or an equivalent network, in the cities of your choice.</p>
                 </div>
-                <div class="panel-footer">
+                <div class="panel-footer clearfix">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
               </div>
@@ -312,7 +317,7 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">Network Television Demographics</h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" id="pad">
               <ul class="nav nav-pills" role="tablist">
                 <li role="presentation" class="active"><a href="#demInfo" aria-controls="demInfo" role="tab" data-toggle="pill">Home</a></li>
                 <li role="presentation"><a href="#foxNews" aria-controls="foxNews" role="tab" data-toggle="pill">Fox News</a></li>
@@ -485,55 +490,131 @@
       
   <!-- Corporate Profile Modal -->
       <div class="modal fade" id="corpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" id="nomodal">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Corporate Profile</i></h4>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Corporate Profile</i></h4>
+                </div>
+                <div class="panel-body">
+                  <p><strong><i>Informed</i></strong> will provide the production of one (1) broadcast quality, 5-6 minute educational documentary profile in HD with expansive and detailed information documenting the issues and educational message that concern your target audience.</p>
+                </div>
+                <div class="panel-footer clearfix">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
-            <div class="modal-body">
-              <p>Informed will provide the production of one (1) broadcast quality, 5-6 minute educational documentary profile in HD with expansive and detailed information documenting the issues and educational message that concern your target audience.</p>
+          </div>
+        </div>
+      </div>
+  <!-- SAMPLE LANDING PAGES -->    
+      <div class="modal fade" id="landingpageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" id="nomodal">
+          <div class="modal-content">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Sample Landing Pages</i></h4>
+                </div>
+                <div class="panel-body">
+                  <p><strong><i>Informed</i></strong> sample landing pages.</p>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <img class="img-responsive" src="img/lp1.png"></img>
+                    </div>
+                    <div class="col-xs-6">
+                      <img class="img-responsive" src="img/lp2.png"></img>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <img class="img-responsive" src="img/lp3.png"></img>
+                    </div>
+                    <div class="col-xs-6">
+                      <img class="img-responsive" src="img/lp4.png"></img>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer clearfix">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+      <!-- SAMPLE LANDING PAGES -->    
+      <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" id="nomodal">
+          <div class="modal-content">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Sample Landing Pages</i></h4>
+                </div>
+                <div class="panel-body">
+                  <p><strong><i>Informed</i></strong> sample narrowcasts.</p>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <img class="img-responsive" src="img/nc1.png"></img>
+                    </div>
+                    <div class="col-xs-6">
+                      <img class="img-responsive" src="img/nc2.png"></img>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <img class="img-responsive" src="img/nc3.png"></img>
+                    </div>
+                    <div class="col-xs-6">
+                      <img class="img-responsive" src="img/nc4.png"></img>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer clearfix">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
   <!-- Production Cycle Modal -->
       <div class="modal fade" id="prodCycleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" id="nomodal">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">About <stong><i>Informed</i></h4>
-            </div>
             <div class="modal-body">
-              <p><strong>Day 1:</strong> Contract signed and organization is scheduled for participation in the project.<br><br>
-              <strong>Days 2 - 14:</strong> Project Fee is due on receipt of invoice; Questionnaire and Collaterals Sent (Due by Day 14).<br><br>
-              <strong>Days 15 - 45:</strong> Project assigned to a field producer, producer reviews literature, acclimates to storyline.<br><br>
-              <strong>Days 46 - 75:</strong> Scripts written and approved. Shoot location determined and shoot day set.<br><br>
-              <strong>Days 76 - 90+:</strong> Shoot day occurs; studio editing of 3 components according to approved script; segments        ..........................are approved and media schedule is set for airing.<br>
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Production Cycle</h4>
+                </div>
+                <div class="panel-body">
+                  <p><strong>Day 1:</strong> Contract signed and organization is scheduled for participation in the project.<br><br>
+                  <strong>Days 2 - 14:</strong> Project Fee is due upon receipt of invoice; Questionnaire and Collaterals Sent (Due by Day 14).<br><br>
+                  <strong>Days 15 - 45:</strong> Project assigned to a field producer, producer reviews literature, acclimates to storyline.<br><br>
+                  <strong>Days 46 - 75:</strong> Scripts written and approved. Shoot location determined and shoot day set.<br><br>
+                  <strong>Days 76 - 90+:</strong> Shoot day occurs; studio editing of 3 components according to approved script; segments are approved and media schedule is set for airing.<br>
+                  </p>
+                </div>
+                <div class="panel-footer clearfix">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
   <!-- SELECTION PROCESS MODAL -->
       <div class="modal fade" id="selectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" id="nomodal">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Selection Process</h4>
-            </div>
             <div class="modal-body">
               <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <p>Typical Selection Process</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Selection Process</h4>
                 </div>
                 <div class="panel-body">
                   <p>Though every segment we produce at <strong><i>Informed</i></strong> is unique, our selection process is typically the same for every story we consider: </p>
@@ -543,10 +624,10 @@
                     <p><li><strong>Final Vetting and Scheduling: </strong>Upon our executive team approving a story/organization; Informed will then extend an Invitation/Production Authorization that would need to be signed and returned for scheduling. That will officially stop our search for a story. Informed would then overnight the next steps of the project and the production cycle begins. (roughly 90-120 days)</li></p>
                   </ul>
                 </div>
+                <div class="panel-footer clearfix">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>

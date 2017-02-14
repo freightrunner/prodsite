@@ -185,12 +185,15 @@ strong > i {
 }
 
 .guide {
-  background-color: #343D4C
-  /*
-  background-image: url("../img/cameraback.png");
+  min-height: 100%;
+  /*background-color: #343D4C*/
+  
+  background-image: url("../img/back2.png");
   background-size: cover !important;
   background-position: top center !important;
-  */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
 }
 
 .row {
@@ -215,4 +218,18 @@ button {
 
 .panel-body {
   padding-top: 2px;
+}
+
+footer {
+  border-top: 1px solid #b9b9b9;
+  text-align: center;
+  font: 300 15px/16px "Lato", sans-serif;
+  min-height: 40px;
+  background-color: #336799;
+  padding-top: 12px;
+}
+
+#footer {
+  color: #1c1c1c !important;
+  margin-right: 10px;
 }

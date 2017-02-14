@@ -151,7 +151,8 @@ p {
 }
 
 h2 {
-    border-top: solid #777;
+    border-bottom: solid #777;
+    margin-top: 0px;
 }
 
 #arrow {
@@ -180,4 +181,12 @@ strong > i {
 
 .modal-body:not(#pad) {
   padding: 0px;
+}
+
+.guide {
+  background-color: #343D4C
+}
+
+.row {
+  margin-right:0px;
 }

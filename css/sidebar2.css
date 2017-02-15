@@ -188,7 +188,7 @@ strong > i {
   min-height: 100%;
   /*background-color: #343D4C*/
   
-  background-image: url("../img/back2.png");
+  background-image: url("../img/tback1.jpg");
   background-size: cover !important;
   background-position: top center !important;
   background-attachment: fixed;
@@ -233,3 +233,34 @@ footer {
   color: #1c1c1c !important;
   margin-right: 10px;
 }
+
+#prodCyclePanel {
+  background-image: url("../img/prodcyback.png");
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat;
+}
+
+#ptvDemoTabContent {
+  background-image: url("../img/tvfam.jpg");
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat;
+}
+
+#panelHeader {
+  color: #FFF;
+  padding: 5px;
+  background-color: rgba(74, 70, 70, 0.88) !important;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+#panelText {
+  color: #FFF;
+  padding: 5px;
+  background-color: rgba(74, 70, 70, 0.85) !important;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+

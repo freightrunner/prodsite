@@ -40,7 +40,7 @@
           </div>
           <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class=""><a href="#intro">About <strong><i>Informed</i></strong><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-info-sign"></span></a></li>
+              <li><a href="#intro">About <strong><i>Informed</i></strong><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-info-sign"></span></a></li>
               <li><a href="#educate">How We Educate<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-education"></span></a></li>
               <li><a href="#nextsteps">Recap & Next Steps<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-hand-right"></span></a></li>
 
@@ -65,15 +65,18 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-2">
-            <div class="row" style="margin-top: 150px;">
-              <div class="panel">
+            <div class="row" style="margin-top: 125px;">
+              <div class="panel see-through">
                 <div class="panel-body">
-                  <div class="col-xs-11">
+                  <div class="col-xs-11" id="aboutpanel">
+                    <!-- 
                     <h2 class="anchor" id="intro">About <strong><i>Informed</i></strong></h2>
-                    <p><strong><i>Informed</strong> Hosted by Rob Lowe</i> is an award-winning program that highlights new stories and innovative concepts through groundbreaking short-form documentary presentations.  For nearly a decade this evolutionary series has been providing organizations with the voice needed to educate the public and make a difference in the world.</p>
+                    -->
+                    <p class="anchor" id="intro"><strong><i>Informed</strong> Hosted by Rob Lowe</i> is an award-winning program that highlights new stories and innovative concepts through groundbreaking short-form documentary presentations.  
+                    <!-- For nearly a decade this evolutionary series has been providing organizations with the voice needed to educate the public and make a difference in the world.</p>
                     <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
                     More Information
-                    </button>
+                    </button> -->
                   </div>
                 </div>
               </div>
@@ -82,7 +85,7 @@
               <div class="panel">
                 <div class="panel-body">
                   <div class="col-xs-11">
-                    <h2 class="anchor" id="educate">Our Three Pronged Appraoch to Education</h2>
+                    <h2 class="anchor" id="educate">How We Educate</h2>
                     <p><strong><i>Informed</i></strong> uses a 3 pronged approach to educating our viewers.  All three of our segments are pre-scripted and captured during our one day of filming (typically lasts 5-6 hours).<br><br>  
                       Use the tabs below to learn more about our 3 segments and the demographics they target.<br></p>
                     <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#ptvSegModal">
@@ -111,6 +114,17 @@
                     <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#prodCycleModal">
                     Production Cycle
                     </button>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary btn-md dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Additional Documents <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="docs/national.pdf" target="_blank">National Overview</a></li>
+                      <li><a href="docs/regional.pdf" target="_blank">Regional Overview</a></li>
+                      <li><a href="docs/invitation2017.pdf" target="_blank">Invitation Summary</a></li>
+                    </ul>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -145,8 +159,10 @@
                     </ul>
                   </ul>
                     <ul class="nav nav-tabs" role="tablist" style="font-size: 115%">
-                      <li role="presentation" class="active"><a href="#ptvDemoTab" aria-controls="ptvDemoTab" role="tab" data-toggle="tab"><strong>PTV Statistice</strong></a></li>
+                      <li role="presentation" class="active"><a href="#ptvDemoTab" aria-controls="ptvDemoTab" role="tab" data-toggle="tab"><strong>PTV Statistics</strong></a></li>
+                      <!-- 
                       <li role="presentation"><a href="#distMap" aria-controls="distMap" role="tab" data-toggle="tab"><strong>Distribution Map</strong></a></li>
+                      -->
                       <li role="presentation"><a href="#ptvExampleSeg" aria-controls="ptvExampleSeg" role="tab" data-toggle="tab"><strong>Example Video</strong></a></li>
                       
                     </ul>
@@ -232,14 +248,15 @@
                 <div class="panel-body">
                   <p>A one minute educational commercial that airs one time nationwide across the major networks (CNN, MSNBC, Discovery, Fox Business, etc.) at prime time (6pm-10pm)</p>
                     <ul class="nav nav-tabs" role="tablist">
-                      <li role="presentation" class="active"><a href="#netCommExampleSeg" aria-controls="netCommExampleSeg" role="tab" data-toggle="tab"><strong>Example Video</strong></a></li>
+                      <li role="presentation" class="active"><a href="#networkDemo" aria-controls="networkDemo" role="tab" data-toggle="tab"><strong>Network Demographics</strong></a></li>
                       <li role="presentation"><a href="#natCommInfo" aria-controls="natCommInfo" role="tab" data-toggle="tab"><strong>National Distribution</strong></a></li>
                       <li role="presentation"><a href="#regCommInfo" aria-controls="regCommInfo" role="tab" data-toggle="tab"><strong>Regional Distribution</strong></a></li>
-                      <li role="presentation"><a href="#networkDemo" aria-controls="networkDemo" role="tab" data-toggle="tab"><strong>Network Demographics</strong></a></li>
+                      
+                      <li role="presentation"><a href="#netCommExampleSeg" aria-controls="netCommExampleSeg" role="tab" data-toggle="tab"><strong>Example Video</strong></a></li>
                     </ul>
                     
                     <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane fade in active" id="netCommExampleSeg" style="">
+                      <div role="tabpanel" class="tab-pane fade" id="netCommExampleSeg" style="">
                         <div class="col-xs-12">
                           <h3 class="" id="" style="margin-top: 10px;">Educational Commercial Example Video</i></h3>
                           <div align="center" class="embed-responsive embed-responsive-16by9">
@@ -268,12 +285,12 @@
                         </div>
                       </div>
  <!-- ==========TABS========== -->                     
-                      <div role="tabpanel" class="tab-pane fade" id="networkDemo" style="">
+                      <div role="tabpanel" class="tab-pane fade in active" id="networkDemo" style="">
                         <div class="col-xs-12">
                           <ul class="nav nav-pills" role="tablist">
                             <li role="presentation" class="active"><a href="#demInfo" aria-controls="demInfo" role="tab" data-toggle="pill">Home</a></li>
-                            <li role="presentation"><a href="#foxNews" aria-controls="foxNews" role="tab" data-toggle="pill">Fox News</a></li>
-                            <li role="presentation"><a href="#foxBusiness" aria-controls="foxBusiness" role="tab" data-toggle="pill">Fox Business</a></li>
+                            <li role="presentation"><a href="#foxNews" aria-controls="foxNews" role="tab" data-toggle="pill">Fox News<!--<img src="img/foxNews.gif" class="img-responsive pull-left" style="max-width: 30px; margin-top: -5px; margin-right: 7px; margin-left: -9px;"></img>--></a></li>
+                            <li role="presentation"><a href="#foxBusiness" aria-controls="foxBusiness" role="tab" data-toggle="pill">Fox Business<!-- <img src="img/foxBusiness.jpg" class="img-responsive pull-left" style="max-width: 35px; margin-top: -5px; margin-right: 7px; margin-left: -9px;"></img>--></a></li>
                             <li role="presentation"><a href="#cnbc" aria-controls="cnbc" role="tab" data-toggle="pill">CNBC</a></li>
                             <li role="presentation"><a href="#cnn" aria-controls="cnn" role="tab" data-toggle="pill">CNN</a></li>
                             <li role="presentation"><a href="#cnnHeadline" aria-controls="cnnHeadline" role="tab" data-toggle="pill">CNN Headline News</a></li>

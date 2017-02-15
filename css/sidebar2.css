@@ -119,15 +119,19 @@ body,html{
   }
   
   .head-default {
-    background-image: url("../img/header-flip.png");
+    background-image: url("../img/header-crop.png");
     background-position: top center !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     padding: 0 0 20px;
     font-family: 'Lato', sans-serif;
-    min-height: 140px;
+    min-height: 115px;
     overflow: visible;
+}
+
+.navbar-brand {
+  padding-top: 3px;
 }
 
 .back {
@@ -139,7 +143,7 @@ body,html{
   height: 100%;
   overflow-y: auto;
   z-index: 1000;
-  margin-top: 140px;
+  margin-top: 115px;
 }
 
 .row {
@@ -203,8 +207,8 @@ strong > i {
 .anchor:before {
   display:block;
   content: " ";
-  margin-top: -150px;
-  height: 150px;
+  margin-top: -125px;
+  height: 125px;
   visibility: hidden;
   position: relative;
   z-index: -100;
@@ -262,5 +266,24 @@ footer {
   background-color: rgba(74, 70, 70, 0.85) !important;
   border-radius: 15px;
   margin-top: 10px;
+}
+
+.see-through {
+  background-color: rgba(74, 70, 70, 0.60) !important;
+  color: #FFF;
+  font-size: 110%;
+  margin-bottom: 0px;
+}
+
+.see-through>.panel-body {
+  padding-bottom: 0px;
+}
+
+.see-through p, #aboutpanel, .panel-body {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  font-size: 110%
 }
 

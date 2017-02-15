@@ -211,10 +211,10 @@
                             <table width=1280 height=720 border=0>
                               <tr align=left valign=top>
                                 <td>
-                          		    <iframe src="https://player.vimeo.com/video/204022038" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                          		    <iframe id="ptvVimeo" src="https://player.vimeo.com/video/204022038" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                           		    <script src="https://player.vimeo.com/api/player.js"></script>
                                   <script>
-                                      var iframe = document.querySelector('iframe');
+                                      var iframe = document.querySelector('#ptvVimeo');
                                       var player = new Vimeo.Player(iframe);
                                   
                                       $('.modal').on('hidden.bs.modal', function () {
@@ -275,19 +275,22 @@
                             <table width=1280 height=720 border=0>
                               <tr align=left valign=top>
                                 <td>
-                          		    <iframe src="https://player.vimeo.com/video/204022038" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                          		    <iframe id="netCommVimeo" src="https://player.vimeo.com/video/204022038" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                          		    <!--
                           		    <script src="https://player.vimeo.com/api/player.js"></script>
+                          		    -->
                                   <script>
-                                      var iframe = document.querySelector('iframe');
-                                      var player = new Vimeo.Player(iframe);
+                                      var iframe_one = document.querySelector('#netCommVimeo');
+                                      var player_one = new Vimeo.Player(iframe_one);
                                   
                                       $('.modal').on('hidden.bs.modal', function () {
-                                      	player.pause();
+                                      	player_one.pause();
                                       })
                                       $('a[data-toggle="tab"]').on('hidden.bs.tab', function () {
-                                        player.pause();
+                                        player_one.pause();
                                       })
                                   </script>
+                                  -->
                               	</td>
                           	  </tr>
                           	</table>
@@ -513,10 +516,12 @@
                             <table width=1280 height=720 border=0>
                               <tr align=left valign=top>
                                 <td>
-                          		    <iframe src="https://player.vimeo.com/video/204022038" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                          		    <iframe id="corpProfileVimeo" src="https://player.vimeo.com/video/204022038" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                          		    <!--
                           		    <script src="https://player.vimeo.com/api/player.js"></script>
+                          		    -->
                                   <script>
-                                      var iframe = document.querySelector('iframe');
+                                      var iframe = document.querySelector('#corpProfileVimeo');
                                       var player = new Vimeo.Player(iframe);
                                   
                                       $('.modal').on('hidden.bs.modal', function () {
@@ -526,6 +531,7 @@
                                         player.pause();
                                       })
                                   </script>
+                                 
                               	</td>
                           	  </tr>
                           	</table>

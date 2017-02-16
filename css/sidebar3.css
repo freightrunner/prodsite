@@ -293,3 +293,10 @@ footer {
   background-position: top center !important;
   background-repeat: no-repeat;
 }
+
+#selectionProcessContent {
+  background-image: url("../img/selectionback.jpg");
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat;
+}

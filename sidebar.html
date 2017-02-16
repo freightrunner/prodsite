@@ -214,14 +214,14 @@
                           		    <iframe id="ptvVimeo" src="https://player.vimeo.com/video/204022038" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                           		    <script src="https://player.vimeo.com/api/player.js"></script>
                                   <script>
-                                      var iframe = document.querySelector('#ptvVimeo');
-                                      var player = new Vimeo.Player(iframe);
+                                      var iframe_ptv = document.querySelector('#ptvVimeo');
+                                      var player_ptv = new Vimeo.Player(iframe_ptv);
                                   
                                       $('.modal').on('hidden.bs.modal', function () {
-                                      	player.pause();
+                                      	player_ptv.pause();
                                       })
                                       $('a[data-toggle="tab"]').on('hidden.bs.tab', function () {
-                                        player.pause();
+                                        player_ptv.pause();
                                       })
                                   </script>
                               	</td>

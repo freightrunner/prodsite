@@ -255,7 +255,7 @@ footer {
 #panelHeader {
   color: #FFF;
   padding: 5px;
-  background-color: rgba(74, 70, 70, 0.88) !important;
+  background-color: rgba(74, 70, 70, 0.65) !important;
   border-radius: 15px;
   margin-top: 10px;
 }
@@ -263,7 +263,7 @@ footer {
 #panelText {
   color: #FFF;
   padding: 5px;
-  background-color: rgba(74, 70, 70, 0.85) !important;
+  background-color: rgba(74, 70, 70, 0.65) !important;
   border-radius: 15px;
   margin-top: 10px;
 }
@@ -287,3 +287,9 @@ footer {
   font-size: 110%
 }
 
+#corpProfileTabContent {
+  background-image: url("../img/corpback.jpg");
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat;
+}

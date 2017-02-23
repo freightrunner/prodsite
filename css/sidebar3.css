@@ -119,7 +119,7 @@ body,html{
   }
   
   .head-default {
-    background-image: url("../img/header-crop.png");
+    background-image: url("../img-b/header-crop.png");
     background-position: top center !important;
     background-size: cover !important;
     background-repeat: no-repeat;
@@ -192,8 +192,8 @@ strong > i {
   min-height: 100%;
   /*background-color: #343D4C*/
   
-  background-image: url("../img/tback1.jpg");
-  background-size: cover !important;
+  background-image: url("../img-b/back.jpg");
+  background-size: cover !important; 
   background-position: top center !important;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -239,14 +239,14 @@ footer {
 }
 
 #prodCyclePanel {
-  background-image: url("../img/prodcyback.png");
+  background-image: url("../img-b/prodcyback.png");
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat;
 }
 
 #ptvDemoTabContent {
-  background-image: url("../img/tvfam.jpg");
+  background-image: url("../img-b/tvfam.jpg");
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat;
@@ -288,14 +288,14 @@ footer {
 }
 
 #corpProfileTabContent {
-  background-image: url("../img/corpback.jpg");
+  background-image: url("../img-b/corpback.jpg");
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat;
 }
 
 #selectionProcessContent {
-  background-image: url("../img/selectionback.jpg");
+  background-image: url("../img-b/selectionback.jpg");
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat;

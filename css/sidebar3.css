@@ -300,3 +300,9 @@ footer {
   background-position: top center !important;
   background-repeat: no-repeat;
 }
+
+.top {
+  margin-top: 35px;
+  color: #FFF !important;
+  font-size: 150%;
+}
